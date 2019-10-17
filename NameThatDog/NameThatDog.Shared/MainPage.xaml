@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="NameThatDog.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary Source="Styles/Styles.xaml"/>
+    </Page.Resources>
+    <StackPanel Background="White">
+        <TextBlock Text="Welcome to Name-That-Pup!" Margin="50" HorizontalAlignment="Center" FontSize="30" />
+        <Image x:Name="dogImage" Source="/Assets/Dogs/swimmingpupper.jpg" Height="300" Width="300" />
+        <TextBlock x:Name="dogNameText" TextAlignment="Center" FontSize="60" Margin="10"/>
+        <Button x:Name="dogNameButton"
+                ClickMode="Press"
+                Click="OnClick"
+                Content="Get me a name!"
+                Style="{StaticResource ButtonStyle}"
+                />
+
+    </StackPanel>
+</Page>
