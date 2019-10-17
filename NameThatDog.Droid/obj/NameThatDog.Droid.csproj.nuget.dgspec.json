@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\mkwwh\\source\\repos\\NameThatDog\\NameThatDog\\NameThatDog.Droid\\NameThatDog.Droid.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\mkwwh\\source\\repos\\NameThatDog\\NameThatDog\\NameThatDog.Droid\\NameThatDog.Droid.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mkwwh\\source\\repos\\NameThatDog\\NameThatDog\\NameThatDog.Droid\\NameThatDog.Droid.csproj",
+        "projectName": "NameThatDog.Droid",
+        "projectPath": "C:\\Users\\mkwwh\\source\\repos\\NameThatDog\\NameThatDog\\NameThatDog.Droid\\NameThatDog.Droid.csproj",
+        "packagesPath": "C:\\Users\\mkwwh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mkwwh\\source\\repos\\NameThatDog\\NameThatDog\\NameThatDog.Droid\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mkwwh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Filter": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            },
+            "Uno.UI": {
+              "target": "Package",
+              "version": "[2.0.322-dev.3156, )"
+            },
+            "Uno.UniversalImageLoader": {
+              "target": "Package",
+              "version": "[1.9.32, )"
+            },
+            "UnoMvvm": {
+              "target": "Package",
+              "version": "[1.0.34, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
