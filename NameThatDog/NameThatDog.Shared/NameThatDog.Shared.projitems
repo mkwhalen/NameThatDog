@@ -18,6 +18,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DogImage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DogName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -34,12 +35,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\download.jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\swimmingpupper.jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\images (2).jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\images (3).jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\images.jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\pip.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\treatcatchboi.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\swimmerboi.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\peakingboi.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\happyboi.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\wavingboi.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Dogs\tinyboi.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\images.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\LockScreenLogo.scale-200.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-200.png" />

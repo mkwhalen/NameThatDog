@@ -8,9 +8,11 @@
     <Page.Resources>
         <ResourceDictionary Source="Styles/Styles.xaml"/>
     </Page.Resources>
-    <StackPanel Background="White">
-        <TextBlock Text="Welcome to Name-That-Pup!" Margin="50" HorizontalAlignment="Center" FontSize="30" />
-        <Image x:Name="dogImage" Source="/Assets/Dogs/swimmingpupper.jpg" Height="300" Width="300" />
+    <StackPanel Background="Lavender">
+        <TextBlock Text="Welcome to Name-That-Pup!" Margin="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+        <Button Click="OnImageClick" Width="356" Height="332" HorizontalAlignment="Center" VerticalAlignment="Center"  Background="Transparent"> 
+            <Image x:Name="dogImage" Source="{Binding ImageName}" Height="332" Width="332" />
+        </Button>
         <TextBlock x:Name="dogNameText" TextAlignment="Center" FontSize="60" Margin="10"/>
         <Button x:Name="dogNameButton"
                 ClickMode="Press"

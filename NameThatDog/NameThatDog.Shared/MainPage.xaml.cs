@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -23,10 +24,13 @@ namespace NameThatDog
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private readonly DogImage _randomDogImage = new DogImage();
         public MainPage()
         {
             this.InitializeComponent();
-           
+            dogImage.DataContext = _randomDogImage;
+            _randomDogImage.GetDogImage();
+
         }
         void OnClick(object sender, RoutedEventArgs e)
         {
@@ -34,6 +38,11 @@ namespace NameThatDog
 
             dogNameText.Text = randomDogName.GetDogName();
 
+        }
+
+        void OnImageClick(object sender, RoutedEventArgs e)
+        {
+            _randomDogImage.GetDogImage();
         }
     }
 }
