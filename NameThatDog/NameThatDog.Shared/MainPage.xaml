@@ -8,10 +8,10 @@
     <Page.Resources>
         <ResourceDictionary Source="Styles/Styles.xaml"/>
     </Page.Resources>
-    <StackPanel Background="Lavender">
-        <TextBlock Text="Welcome to Name-That-Pup!" Margin="50" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
-        <Button Click="OnImageClick" Width="356" Height="332" HorizontalAlignment="Center" VerticalAlignment="Center"  Background="Transparent"> 
-            <Image x:Name="dogImage" Source="{Binding ImageName}" Height="332" Width="332" />
+    <StackPanel x:Name="stackPanel" Background="Lavender">
+        <TextBlock Margin="50" Text="Welcome to Name-That-Pup!" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Button Click="OnImageClick" HorizontalAlignment="Center" VerticalAlignment="Center"  Background="Transparent" Height="175"> 
+            <Image x:Name="dogImage" Source="{Binding ImageName}" />
         </Button>
         <TextBlock x:Name="dogNameText" TextAlignment="Center" FontSize="60" Margin="10"/>
         <Button x:Name="dogNameButton"
@@ -20,6 +20,11 @@
                 Content="Get me a name!"
                 Style="{StaticResource ButtonStyle}"
                 />
-
+        <Button x:Name="platformSpecific" 
+                ClickMode="Press"
+                Click="OnPlatformClick"
+                Content="Which Platform Am I On?"
+                Style="{StaticResource ButtonStyle}" />
+        <TextBlock x:Name="platformText" TextAlignment="Center" FontSize="60" Margin="10"/>
     </StackPanel>
 </Page>

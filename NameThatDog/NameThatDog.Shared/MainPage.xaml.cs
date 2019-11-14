@@ -15,16 +15,12 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
 namespace NameThatDog
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         private readonly DogImage _randomDogImage = new DogImage();
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -43,6 +39,19 @@ namespace NameThatDog
         void OnImageClick(object sender, RoutedEventArgs e)
         {
             _randomDogImage.GetDogImage();
+        }
+
+        void OnPlatformClick(object sender, RoutedEventArgs e)
+        {
+            #if NETFX_CORE
+                        platformText.Text = "This is UWP!";
+            #elif __WASM__
+                        platformText.Text = "This is WebAssembly!";
+            #elif __ANDROID__
+                        platformText.Text = "This is Android!";
+            #elif IOS
+                        platformText.Text = "This is iOS!";
+            #endif
         }
     }
 }
